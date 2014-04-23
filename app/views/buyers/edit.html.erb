@@ -1,0 +1,31 @@
+<div class="page-header">
+  <h1>Tell us about yourself: <small>Step 2 of 2</small></h1>
+</div>
+
+<div class="jumbotron-buyers">
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</div>
+
+<hr/>
+
+<%= bootstrap_form_for(@buyer) do |f| %>
+  <div class="col-sm-12">
+    <%= f.select :timeframe, options_for_select(['Right Now','Less than 90 Days','Within 6 months','Within a year','More than a year']), label: "When are you looking to sell?" %>
+  </div>
+  <div class="col-sm-3">
+    <%= f.text_field :first_name, label: "First Name" %>
+  </div>
+  <div class="col-sm-3">
+    <%= f.text_field :last_name, label: "Last Name" %>
+  </div>
+  <div class="col-sm-3">
+    <%= f.email_field :email, label: "Best Email" %>
+  </div>
+  <div class="col-sm-3">
+    <%= f.text_field :phone, label: "Phone Number" %>
+  </div>
+  <div class="col-sm-3">
+    <%= f.submit "Get Matched Now", class: 'btn btn-large btn-primary btn-block' %>
+  </div>
+<% end %>

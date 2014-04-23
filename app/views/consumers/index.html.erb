@@ -1,0 +1,139 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <%= image_tag('home-house1.jpg', size: "1200x500") %>
+                        <div class="carousel-caption">
+                            <h3>
+                                </h3>
+                            <p>
+                                </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <%= image_tag('home-house2.jpg', size: "1200x500") %>
+                        <div class="carousel-caption">
+                            <h3>
+                                </h3>
+                            <p>
+                                </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <%= image_tag('home-house3.jpg', size: "1200x500") %>
+                        <div class="carousel-caption">
+                            <h3>
+                                </h3>
+                            <p>
+                               </p>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control"
+                        href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right">
+                        </span></a>
+            </div>
+            <div class="main-text hidden-xs">
+                <div class="col-md-12 text-center jumbotron-blur">
+                    <h1>
+                        Get Matched With the Correct Real Estate Pro!</h1>
+                    <h3>
+                        How can we help?
+                    </h3>
+                    <div class="">
+                      <%= link_to "Looking to Buy?", new_buyer_path, class: "btn btn-clear btn-sm btn-min-block" %>
+                      <%= link_to "Looking to Sell?", new_consumer_path, class: "btn btn-clear btn-sm btn-min-block" %>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="push">
+</div>
+
+
+<div class="container">
+    <div class="page-header">
+        <h1 id="timeline">How we find a match for you</h1>
+    </div>
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Buying or selling?</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Are you selling your home or wanting to buy one? Click on the appropriate button above. If you are doing both it is best to click selling.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-home"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Tell us About the Property</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Let us know about your property you want to sell or the property you are looking to buy.</p>
+              <p>This will help us match you up with the correct agent.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge danger"><i class="glyphicon glyphicon-user"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Tell us about yourself</h4>
+            </div>
+            <div class="timeline-body">
+              <p>We will pass this information along to the agent so that they can be in contact with you as quickly as possible with the information you are looking for.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge success"><i class="glyphicon glyphicon-earphone"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">A match will occur</h4>
+            </div>
+            <div class="timeline-body">
+              <p>We will match you with an excellent, responsive Realtor that is best suited to help you.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Let Your Pro Help You</h4>
+            </div>
+            <div class="timeline-body">
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                  Start Here <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">                  
+                  <li><%= link_to "Looking to Buy?", new_buyer_path %></li>
+                  <li class="divider"></li>
+                  <li><%= link_to "Looking to Sell?", new_consumer_path %></li>
+                </ul>
+              </div>
+              <hr>
+              <p>The Realtor will then help you through the process of either selling your home or finding the home of your dreams.</p>
+              <p>You can rest assured you are working with a true professional.</p>             
+            </div>
+          </div>
+        </li>
+        
+    </ul>
+</div>

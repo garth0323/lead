@@ -1,0 +1,18 @@
+<div class="page-header">
+  <h1>Tell us about your home: <small>Step 1 of 2</small></h1>
+</div>
+
+<div class="jumbotron-seller">
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</div>
+
+<br/>
+
+<%= bootstrap_form_for(@consumer) do |f| %>
+    <%= f.select :home, options_for_select(['Single Family Home','Condo','Townhome','Vacant Land','Other']), label: "What type of home do you want to sell?" %>
+    <%= f.select :timeframe, options_for_select(['Right Now','Less than 90 Days','Within 6 months','Within a year','More than a year']), label: "When are you looking to sell?" %>
+    <%= f.select :reason, options_for_select(['Want a bigger home','Want a smaller home','Financial Reasons','Want to Move to New Area','Retirement', 'Other']), label: "What is the reason for selling your home?" %>
+    <%= f.submit "Next Step", class: 'btn btn-large btn-primary' %>
+<% end %>
+

@@ -1,0 +1,35 @@
+<div class="page-header">
+  <h1>Tell us about your wants: <small>Step 1 of 2</small></h1>
+</div>
+
+<div class="jumbotron-buyer">
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</div>
+
+<hr/>
+
+<%= bootstrap_form_for(@buyer) do |f| %>
+  <div class="col-sm-3">
+    <%= f.text_field :city %>
+  </div>
+  <div class="col-sm-3">  
+    <%= f.text_field :state %>
+  </div>
+  <div class="col-sm-3">
+    <%= f.select :home, options_for_select(['Single Family Home','Condo','Townhome','Vacant Land','Other']), label: "Type of home?" %>
+  </div>
+  <div class="col-sm-3">
+    <%= f.select :max_price, options_for_select(['100,000','200,000','300,000','500,000','750,000','750,000 plus']), label: "Price range?" %>
+  </div>
+  <div class="col-sm-3">
+    <%= f.select :beds, options_for_select(['1','2','3','4','5', '6 or more']), label: "Beds?" %>
+  </div>
+  <div class="col-sm-3">
+    <%= f.select :baths, options_for_select(['1','2','3','4','5', '6 or more']), label: "Baths?" %>
+  </div>
+  <div class="col-sm-3">
+    <br>
+    <%= f.submit "Next Step", class: 'btn btn-large btn-primary btn-block' %>
+  </div>
+<% end %>

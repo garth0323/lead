@@ -1,0 +1,36 @@
+<div class="page-header">
+  <h1>Tell us about yourself: <small>Step 2 of 2</small></h1>
+</div>
+
+<div class="jumbotron-sale">
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</div>
+<br/>
+<%= bootstrap_form_for(@consumer) do |f| %>
+  <div class="col-sm-3">
+    <%= f.text_field :first_name, label: "First Name" %>
+  </div>
+  <div class="col-sm-3">
+    <%= f.text_field :last_name, label: "Last Name" %>
+  </div>
+  <div class="col-sm-3">
+    <%= f.email_field :email, label: "Best Email" %>
+  </div>
+  <div class="col-sm-3">
+    <%= f.text_field :phone, label: "Phone Number" %>
+  </div>
+  <div class="col-sm-6">
+    <%= f.text_field :address, control_col: "col-sm-3", label: "Street Address" %>
+  </div>
+  <div class="col-sm-3">  
+    <%= f.text_field :city, label: "City" %>
+  </div>
+  <div class="col-sm-3">  
+    <%= f.text_field :state, label: "State" %>
+  </div>
+  <div class="col-sm-3">  
+    <%= f.text_field :zip, label: "Zip Code" %>
+  </div>
+  <%= f.submit "Get matched with an agent", class: 'btn btn-large btn-primary btn-block' %>
+<% end %>
