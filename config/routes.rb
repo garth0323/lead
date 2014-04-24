@@ -1,6 +1,6 @@
 Lead::Application.routes.draw do
   
-  get 'agents', to: 'agents#home'
+  get 'agent', to: 'agents#home'
   devise_for :agents
   root to: "consumers#index"
   resources :consumers
